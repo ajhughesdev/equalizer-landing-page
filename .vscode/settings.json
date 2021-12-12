@@ -1,0 +1,22 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "Consolas",
+    "editor.fontSize": 13,
+    "editor.tabSize": 2,
+    "editor.fontWeight": "400",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "git.autofetch": "all",
+    "html.completion.attributeDefaultValue": "singlequotes",
+    "html.format.endWithNewline": true,
+    "html.format.indentInnerHtml": true,
+    "html.format.indentHandlebars": true,
+    "npm.packageManager": "npm",
+    "editor.matchBrackets": "never",
+    "html.autoClosingTags": false,
+    "css.completion.completePropertyWithSemicolon": false,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120
+
+}

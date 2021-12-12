@@ -1,0 +1,122 @@
+/*** The new CSS Reset - version 1.4.2 (last updated 30.11.2021) ***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly. */
+:where([contenteditable]) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "IBM Plex Sans", sans-serif;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+}
+
+.bg-main {
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.028409rem;
+  line-height: 1.2;
+  color: #191826;
+  margin: 4.000625rem 1.5rem 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625;
+  margin: 0 1.5rem 10.375rem;
+}
+
+.illustration-app {
+  width: 13.060625rem;
+  transform: translateY(-32.625rem);
+  margin: 0 5.334375rem 3rem 5.041875rem;
+}
+
+.black-card {
+  background-color: #191826;
+  border-radius: 0.75rem;
+  height: 600px;
+}
+.black-card .bg-pattern-2 {
+  margin: 0 2.9375rem 0 3rem;
+  width: 17.5rem;
+  height: 26.25rem;
+}
+
+.logo {
+  margin: 2.499375rem 12.7975rem 0 1.509375rem;
+}
+
+.orange-card {
+  transform: translateY(-220px);
+  background-color: #FA7453;
+  height: 545px;
+  border-radius: 0.75rem;
+}
+.orange-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 3rem 2.3125rem 0 2.25rem;
+  color: #FCFAF9;
+}
+.orange-card p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fcfaf9;
+  margin: 0.75rem 2.3125rem 0 2.25rem;
+}
+
+/*# sourceMappingURL=main.css.map */
