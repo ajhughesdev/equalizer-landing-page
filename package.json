@@ -6,9 +6,10 @@
     "autoprefixer": "^10.4.0",
     "scss": "^0.2.4"
   },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss:compile": "sass src/main.scss dist/css/main.css --watch"
+    "scss:compile": "sass --watch src/main.scss:dist/css/main.css"
   },
   "keywords": [],
   "author": "",

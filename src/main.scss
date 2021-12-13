@@ -1,71 +1,72 @@
 @use 'reset';
+@use 'typography';
+
 
 body {
   background-color: #f2f2f2;
-  font-family: 'IBM Plex Sans', sans-serif;
-  display: grid;
-  grid-template-rows: repeat(4, auto);
+  // display: grid;
+  // grid-template-rows: repeat(4, auto);
 }
 
-.bg-main {
-  z-index: -1;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+.hero {
+  
+  .bg-main {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.028409rem;
-  line-height: 1.2;
-  color: #191826;
-  margin: 4.000625rem 1.5rem 1.25rem;
-}
+  .logo {
+    margin: 2.499375rem 12.7975rem 0 1.509375rem;
+  }
 
-p {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.625;
-  margin: 0 1.5rem 10.375rem;
-}
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.028409rem;
+    line-height: 1.2;
+    color: #191826;
+    margin: 4.000625rem 1.5rem 1.25rem;
+  }
 
-.illustration-app {
-  width: 13.060625rem;
-  transform: translateY(-32.625rem);
-  margin: 0 5.334375rem 3rem 5.041875rem;
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625;
+    margin: 0 1.5rem 10.375rem;
+  }
 }
 
 .black-card {
   background-color: #191826;
   border-radius: .75rem;
-  height: 600px;
+  height: 37.5rem;
 
   .bg-pattern-2 {
     margin: 0 2.9375rem 0 3rem;
     width: 17.5rem;
-    height: 26.25rem;
+  }
+
+  .illustration-app {
+    width: 13.060625rem;
+    transform: translateY(-32.625rem);
+    margin: 0 5.334375rem 3rem 5.041875rem;
   }
 }
 
-.logo {
-  margin: 2.499375rem 12.7975rem 0 1.509375rem;
-}
-
-
-
 .orange-card {
-  transform: translateY(-220px);
+  transform: translateY(-13.75rem);
   background-color: #FA7453;
-  height: 545px;
+  height: 34.125rem;
   border-radius: .75rem;
 
   h2 {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.25;
-    margin: 3rem 2.3125rem 0 2.25rem;
+    padding: 3rem 2.3125rem 0 2.25rem;
     color: #FCFAF9;
   }
 
@@ -74,6 +75,67 @@ p {
     font-weight: 400;
     line-height: 28px;
     color: #fcfaf9;
-    margin: .75rem 2.3125rem 0 2.25rem;
+    padding: .75rem 2.3125rem 0 2.25rem;
   }
+
+  .price {
+    color: #FCFAF9;
+    display: flex;
+    flex-direction: row;
+    width: 10.3125rem;
+    height: 3.25rem;
+    margin: 2.25rem 10.5rem 0 2.625rem;
+
+    :first-child {
+      font-size: 4.0625rem;
+      font-weight: 700;
+      line-height: .8;
+      padding-right: 1rem;
+    }
+
+    :last-child {
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.6;
+      letter-spacing: -0.0125rem;
+    }
+  }
+
+  button {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.01125rem;
+    border-radius: .75rem;
+    margin: 0 37px 0 2.625rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .ios {
+    color: #fcfaf9;
+    background-color: #191826;
+    margin-top: 2rem;
+    padding: .9375rem 4.8125rem .875rem;
+    gap: .495rem;
+  }
+
+
+  .android {
+    color: #191826;
+    background-color: #FCFAF9;
+    margin-top: 1rem;
+    padding: .9375rem 3.65625rem .875rem 3.6875rem;
+    gap: .4875rem;
+  }
+}
+
+footer {
+  color: #191826;
+
+  .logo {
+    // margin: 3.999375rem 12.735rem 2.000625rem 1.571875rem;
+  }
+
 }
