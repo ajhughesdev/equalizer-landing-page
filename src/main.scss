@@ -4,17 +4,15 @@
 
 body {
   background-color: #f2f2f2;
-  // display: grid;
-  // grid-template-rows: repeat(4, auto);
+  display: grid;
 }
 
 .hero {
-  
+
   .bg-main {
     z-index: -1;
     width: 100%;
     position: absolute;
-    top: 0;
     right: 0;
   }
 
@@ -133,9 +131,32 @@ body {
 
 footer {
   color: #191826;
+  transform: translateY(-14.375rem);
+  margin-bottom: -180px;
 
   .logo {
-    // margin: 3.999375rem 12.735rem 2.000625rem 1.571875rem;
+    margin: 3.999375rem 12.735rem 2.000625rem 1.571875rem;
   }
 
+  .copyright,
+  .contact,
+  .email {
+    margin: 0 1.5rem;
+    font-size: 1rem;
+    color: #191826;
+    line-height: 1.625;
+  }
+
+  .email {
+    font-weight: 700;
+  }
+
+  .socials {
+    width: 100px;
+    margin: 4rem 0 0 1.5rem;
+
+    svg {
+      margin-right: .625rem;
+    }
+  }
 }

@@ -60,13 +60,13 @@ textarea {
 
 body {
   background-color: #f2f2f2;
+  display: grid;
 }
 
 .hero .bg-main {
   z-index: -1;
   width: 100%;
   position: absolute;
-  top: 0;
   right: 0;
 }
 .hero .logo {
@@ -170,6 +170,29 @@ body {
 
 footer {
   color: #191826;
+  transform: translateY(-14.375rem);
+  margin-bottom: -180px;
+}
+footer .logo {
+  margin: 3.999375rem 12.735rem 2.000625rem 1.571875rem;
+}
+footer .copyright,
+footer .contact,
+footer .email {
+  margin: 0 1.5rem;
+  font-size: 1rem;
+  color: #191826;
+  line-height: 1.625;
+}
+footer .email {
+  font-weight: 700;
+}
+footer .socials {
+  width: 100px;
+  margin: 4rem 0 0 1.5rem;
+}
+footer .socials svg {
+  margin-right: 0.625rem;
 }
 
 /*# sourceMappingURL=main.css.map */
