@@ -60,7 +60,7 @@ textarea {
 
 body {
   background-color: #f2f2f2;
-  display: grid;
+  overflow-x: hidden;
 }
 
 .hero .bg-main {
@@ -68,6 +68,32 @@ body {
   width: 100%;
   position: absolute;
   right: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero .bg-main .bg-main {
+    display: none;
+  }
+}
+.hero .bg-main-tab {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero .bg-main-tab {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.hero .bg-pattern-1 {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero .bg-pattern-1 {
+    display: block;
+    position: absolute;
+    top: -32px;
+    left: 497px;
+  }
 }
 .hero .logo {
   margin: 2.499375rem 12.7975rem 0 1.509375rem;
@@ -171,7 +197,7 @@ body {
 footer {
   color: #191826;
   transform: translateY(-14.375rem);
-  margin-bottom: -180px;
+  margin-bottom: -13.75rem;
 }
 footer .logo {
   margin: 3.999375rem 12.735rem 2.000625rem 1.571875rem;
@@ -188,11 +214,11 @@ footer .email {
   font-weight: 700;
 }
 footer .socials {
-  width: 100px;
-  margin: 4rem 0 0 1.5rem;
+  margin: 4rem 0 5rem 1.5rem;
+  display: flex;
 }
 footer .socials svg {
-  margin-right: 0.625rem;
+  margin-right: 1.25rem;
 }
 
 /*# sourceMappingURL=main.css.map */

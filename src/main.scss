@@ -1,10 +1,11 @@
 @use 'reset';
+@use 'variables';
 @use 'typography';
 
 
 body {
   background-color: #f2f2f2;
-  display: grid;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -14,6 +15,33 @@ body {
     width: 100%;
     position: absolute;
     right: 0;
+
+    @media screen and (min-width: variables.$layout-breakpoint-tablet) {
+      .bg-main {
+        display: none;
+      }
+    }
+  }
+
+  .bg-main-tab {
+    display: none;
+
+    @media screen and (min-width: variables.$layout-breakpoint-tablet) {
+      display: block;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .bg-pattern-1 {
+    display: none;
+
+    @media screen and (min-width: variables.$layout-breakpoint-tablet) {
+      display: block;
+      position: absolute;
+      top: -32px;
+      left: 497px;
+    }
   }
 
   .logo {
@@ -132,7 +160,7 @@ body {
 footer {
   color: #191826;
   transform: translateY(-14.375rem);
-  margin-bottom: -180px;
+  margin-bottom: -13.75rem;
 
   .logo {
     margin: 3.999375rem 12.735rem 2.000625rem 1.571875rem;
@@ -152,11 +180,11 @@ footer {
   }
 
   .socials {
-    width: 100px;
-    margin: 4rem 0 0 1.5rem;
+    margin: 4rem 0 5rem 1.5rem;
+    display: flex;
 
     svg {
-      margin-right: .625rem;
+      margin-right: 1.25rem;
     }
   }
 }
